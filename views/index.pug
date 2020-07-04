@@ -1,0 +1,14 @@
+html
+    head
+        title hello w
+    body(id = "videoFeed")
+        iframe(src="https://www.youtube.com/watch?v=dCPoOhgl1RQ")
+        button(onclick = "onButtonClick()") Press me 
+        form(method="POST" action = "/upload")
+            h1 upload a video
+                label(for="url") url :
+                input(type="url",placeholder = "youtube.com", name = 'url')
+                button(type = "submit") upload
+    script(src="/buttonClick.js")
+    script(src="/loadPage.js")
+
